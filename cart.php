@@ -19,6 +19,11 @@
 	<?php
 		require_once "scripts/nav_script.php";
 	?>
+	<br/>
+	<h1 style="margin-top:1vh; font-size:4vh; color:black;">Shopping Cart</h1>
+	<br/>
+	<p>Proceed to checkout</p>
+	<br />
 	<table class="cart">
 	<?php
 		require_once "scripts/cart_script.php";
