@@ -33,7 +33,7 @@
 		<?php require_once "scripts/admin_mod_p.php"; ?>
 	</div>
 	<div>
-
+		<?php require_once "scripts/admin_mod_u.php"; ?>
 	</div>
 </body>
 </html>

@@ -6,7 +6,9 @@
 	if ($result=mysqli_query($link,$sql)) {
 		while ($row=mysqli_fetch_row($result))
 		{
-			echo '<tr><form action="scripts/modify.php" method="post"><td><img src="imgs/products/'.$row[1].'"><input type="hidden" name="p_id" value="'.$row[0].'"</td>
+			echo '<tr><form action="scripts/modify.php" method="post"><td><img src="imgs/products/'.$row[1].'">
+			<input type="hidden" name="p_id" value="'.$row[0].'">
+			<input type="hidden" name="m_table" value="product"></td>
 			<td><input type="text" value="'.$row[2].'" name="p_name"</td>
 			<td>R<input type="int" value="'.$row[3].'" name="p_price"></td>
 			<td><button type="submit"><img src="imgs/mod.png" class="a_icon"></button></td>
