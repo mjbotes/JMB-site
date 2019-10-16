@@ -24,8 +24,13 @@
             <br/>
             <h1 style="margin-top:2vh; font-size:3vh; color:black;">Welcome to JMB's, login or click below to see our goods!</h1>
             <br/>
+            <h1 style="margin-top:2vh; font-size:2vh; color:black;">We got new stock:</h1>
+            <br/>
                 <div class="landgoods">
-                    <img src="./imgs/products/p1.jpg" width=40%>
+                    <a href="index.php"><img src="./imgs/products/p1.jpg" width=100%></a>
+                    <a href="index.php"><img src="./imgs/products/p1.jpg" width=100%></a>
+                    <a href="index.php"><img src="./imgs/products/p1.jpg" width=100%></a>
+                    <a href="index.php"><img src="./imgs/products/p1.jpg" width=100%></a>
                 </div>
             <a href="index.php"><button style="color:black">look at our stuff</button></a>
         </div>
