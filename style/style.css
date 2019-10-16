@@ -19,6 +19,50 @@ body {
 	text-align: center;
 }
 
+.land {
+	background-image: url("../imgs/land.jpg");
+	height: 80%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	color: white;
+}
+
+.landgoods{
+	margin-top: 2vh;
+	border: black;
+	display: block;
+	width:25%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+.landgoods img{
+	border: 2px solid black;
+}
+
+.land-text button {
+	outline: 0;
+	display: inline-block;
+	padding: 10px 25px;
+	color: white;
+	background-color:white;
+	text-align: center;
+	cursor: pointer;
+	font-family: xmas;
+	font-size: 2vh;
+	border: 2px solid black;
+	margin-top: 10vh;
+	margin-bottom: auto;
+}
+  
+  .land-text button:hover {
+	background-color: maroon;
+	color: white;
+	font-family: xmas;
+}
+
 .acc {
 	color: black;
 }
@@ -108,23 +152,23 @@ h3 {
 }
 
 .nav {
-	background-color: white;
+	background-color: black;
 	display: block;
+	padding-top: 1vh;
+	padding-bottom: 1vh;
 }
 
 .nav a {
 	width: 15%;
 	padding-top: 1vh;
 	padding-bottom: 1vh;
-	outline-width: 1;
-	outline-style: solid;
 	text-align: center;
 	display: inline-block;
 	transition: 0.8s;
 	text-decoration: none;
 	font-size: 2vh;
 	font-family: xmas;
-	color: black;
+	color: white;
 }
 
 .userd{
