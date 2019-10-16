@@ -27,10 +27,10 @@
             <h1 style="margin-top:2vh; font-size:2vh; color:black;">We got new stock:</h1>
             <br/>
                 <div class="landgoods">
-                    <a href="index.php"><img src="./imgs/products/p1.jpg" width=100%></a>
-                    <a href="index.php"><img src="./imgs/products/p1.jpg" width=100%></a>
-                    <a href="index.php"><img src="./imgs/products/p1.jpg" width=100%></a>
-                    <a href="index.php"><img src="./imgs/products/p1.jpg" width=100%></a>
+                    <a href="index.php"><img src="./imgs/cart.jpg" width=100%;></a>
+                    <a href="index.php"><img src="./imgs/rein.jpg" width=100%></a>
+                    <a href="index.php"><img src="./imgs/santa.jpg" width=100%></a>
+                    <a href="index.php"><img src="./imgs/cart.jpg" width=100%></a>
                 </div>
             <a href="index.php"><button style="color:black">look at our stuff</button></a>
         </div>
