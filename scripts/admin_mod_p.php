@@ -6,7 +6,11 @@
 	if ($result=mysqli_query($link,$sql)) {
 		while ($row=mysqli_fetch_row($result))
 		{
-			echo '<tr><td><img src="imgs/products/'.$row[1].'"></td><td>'.$row[2].'</td><td>R'.$row[3].'</td><td><img src="imgs/mod.png" class="a_icon"></td><td><img src="imgs/del.png" class="a_icon"></td></tr>';
+			echo '<tr><form action="scripts/modify.php" method="post"><td><img src="imgs/products/'.$row[1].'"><input type="hidden" name="p_id" value="'.$row[0].'"</td>
+			<td><input type="text" value="'.$row[2].'" name="p_name"</td>
+			<td>R<input type="int" value="'.$row[3].'" name="p_price"></td>
+			<td><button type="submit"><img src="imgs/mod.png" class="a_icon"></button></td>
+			<td><a href="scripts/delete.php?del_product='.$row[0].'"><img src="imgs/del.png" class="a_icon"></a></td></tr>';
 		}
 		mysqli_free_result($result);
 	}

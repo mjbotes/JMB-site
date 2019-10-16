@@ -1,3 +1,12 @@
+<?php
+	session_start();
+	if(isset($_SESSION['is_admin']) && $_SESSION['is_admin'] === 1)
+	{
+		$ok = 1;
+	} else {
+		header("location: index.php");
+	}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

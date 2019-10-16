@@ -43,7 +43,7 @@ if(isset($_POST["submit"])) {
 				$p_name = $_POST["p_name"];
 				$price = $_POST["price"];
 				if(mysqli_stmt_execute($stmt)){
-					header("location: ../admin_add_p.php");
+					header("location: ../admin.php");
 				} else{
 					echo "Something went wrong. Please try again later.";
 				}
