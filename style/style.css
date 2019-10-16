@@ -184,7 +184,7 @@ h3 {
     right: 0;
     top: 5%;
     padding-right: 1%;
-    width: 15%;
+    width: flex;
 	padding-left: 1%;
     position: fixed;
 	height: 3vh;
@@ -504,4 +504,23 @@ table.admin_table {
 	height: 1000px;
 	width: 100%;
 	background-image: url("../imgs/land.jpg");
+}
+
+.qty_id {
+	width: 25px;
+	margin: 0 5px;
+}
+
+.c_del {
+	width: 30px;
+}
+
+.tree {
+	width: 20px;
+}
+
+.rbig {
+	width: 80%;
+	color: black;
+	margin: 10px auto;
 }

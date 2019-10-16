@@ -8,19 +8,17 @@
 				mysqli_stmt_bind_param($stmt, "ii", $u_id, $p_id);
 				$u_id = $_SESSION["ID"];
 				$p_id = $_GET["p_id"];
-				echo $u_id;
-				echo $p_id;
-				if(mysqli_stmt_execute($stmt)){
-					header("location: ../index.php");
-				} else {
-					echo "better";
-				}
+				$sql = "SELECT `user_id` FROM `cart` WHERE `user_id`=".$u_id." AND `product_id`=".$p_id;
+				$smt = mysqli_prepare($link, $sql);	
+				if(mysqli_stmt_execute($smt)){
+						mysqli_stmt_store_result($smt);
+						if(mysqli_stmt_num_rows($smt) === 0){
+							mysqli_stmt_execute($stmt);}
+						}
+					}
 		} else {
 			$err = mysqli_error();
 			echo $err;
 		}
-	} else {
-		echo "FUCK";
-	}
-	
+	header("location: ../cart.php");
 ?>

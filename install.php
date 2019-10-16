@@ -60,5 +60,17 @@ $sql = "CREATE TABLE IF NOT EXISTS cart (
     } else {
         echo "Error creating table: " . $conn->error;
     }
-    $link->close();
+	$link->close();
+	
+$sql = "CREATE TABLE `users`.`orders` ( `order_id` 
+	INT NOT NULL AUTO_INCREMENT  PRIMARY KEY,
+	`user_id` INT NOT NULL ,
+	`product_id` INT NOT NULL ,
+	`qty` INT NOT NULL , 
+	`Time` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP";
+	 if ($link->query($sql) === TRUE) {
+        echo "Table Orders created successfully";
+    } else {
+        echo "Error creating table: " . $conn->error;
+    }
 ?>

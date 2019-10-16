@@ -41,6 +41,9 @@
 	<div>
 		<?php require_once "scripts/admin_mod_u.php"; ?>
 	</div>
+	<div>
+		<?php require_once "scripts/admin_carts.php"; ?>
+	</div>
 </div>
 </body>
 </html>
