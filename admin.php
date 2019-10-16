@@ -18,15 +18,20 @@
 	type = "text/css"
 	href = "./style/style.css" />
 </head>
-<body>
+<body style="height:100%; margin: 0;">
 	<header>
+	<img src="./imgs/header/logo.png" style="width:12%;">
 	<?php require_once "user_scripts/user_bar.php"; ?>
 	</header>
 	<?php 
 	require_once "scripts/nav_script.php";
 	require_once "scripts/config.php"
 	?>
-	<div class="add_p">
+	<br/>
+	<h1 style="margin-top:1vh; font-size:4vh; color:black;">JMB Admin</h1>
+	<br />
+	<h1 style="margin-top:1vh; font-size:3vh; color:black;">Add Product</h1>
+	<div class="add_p" style="font-size: 2vh">
 		<?php require_once "scripts/admin_add_p.php"; ?>
 	</div>
 	<div>
