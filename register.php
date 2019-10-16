@@ -29,7 +29,7 @@
             <div class="form-group <?php echo (!empty($name_err)) ? 'has-error' : ''; ?>">
                 <label>Surname</label>
                 <input type="surname" name="surname" class="form-control" value="<?php echo $surname; ?>">
-                <span class="help-block"><?php echo $name_err; ?></span>
+                <span class="help-block"><?php echo $sname_err; ?></span>
             </div> 
             <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
                 <label>Email </label>

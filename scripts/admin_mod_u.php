@@ -14,7 +14,7 @@
 			<td><input type="int" value="'.$row[3].'" name="email"></td>
 			<td><input type="int" value="'.$row[4].'" name="p_no"></td>
 			<td><button type="submit"><img src="imgs/mod.png" class="a_icon"></button></td>
-			<td><a href="scripts/delete.php?del_user='.$row[0].'"><img src="imgs/del.png" class="a_icon"></a></td></tr>';
+			<td><a href="scripts/delete.php?del_user='.$row[0].'"><img src="imgs/del.svg" class="a_icon"></a></td></tr>';
 		}
 		mysqli_free_result($result);
 	}
