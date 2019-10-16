@@ -17,10 +17,10 @@
 			?>
 	</header>
 	<?php require_once "scripts/nav_script.php"; ?>
-	<div class="main">
-		<div class="categories">
+	<div class="categories">
 		<h1 style="margin-top:4vh; font-size:3vh; color:black;">Categories</h1>
 		</div>
+	<div class="main">
 		<br/>
 		<div class="products">
 			<?php
