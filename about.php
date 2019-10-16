@@ -19,9 +19,10 @@
 		<?php
 				require_once "user_scripts/user_bar.php";
 		?>
-	</header>
+  </header>
+  <?php require_once "scripts/nav_script.php"; ?>
     <div class ="about">
-		<?php require_once "scripts/nav_script.php"; ?>
+		
         <h3>Santa and his Elf</h3>
         <div class="aboutinfobox">
             <br/>

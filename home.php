@@ -20,7 +20,7 @@
     <div class="land">
         <div class="land-text">
             <br/>
-            <h1 style="margin-top:4vh; font-size:5vh; color:white;">Jingle My Bells</h1>
+            <h1 style="margin-top:4vh; font-size:5vh; color:black;">Jingle My Bells</h1>
             <br/>
             <h1 style="margin-top:2vh; font-size:3vh; color:black;">Welcome to JMB's, login or click below to see our goods!</h1>
             <br/>

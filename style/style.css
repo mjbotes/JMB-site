@@ -21,6 +21,7 @@ body {
 
 .land {
 	background-image: url("../imgs/land.jpg");
+	fill-opacity: 30%;
 	height: 80%;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -42,6 +43,7 @@ body {
 }
 .landgoods img{
 	border: 2px solid black;
+	margin-left: 2%;
 }
 
 .land-text button {
@@ -156,14 +158,14 @@ h3 {
 .nav {
 	background-color: black;
 	display: block;
-	padding-top: 1vh;
-	padding-bottom: 1vh;
+	padding-top: .5vh;
+	padding-bottom: .5vh;
 }
 
 .nav a {
 	width: 15%;
-	padding-top: 1vh;
-	padding-bottom: 1vh;
+	padding-top: .5vh;
+	padding-bottom: .5vh;
 	text-align: center;
 	display: inline-block;
 	transition: 0.8s;
