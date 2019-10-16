@@ -1,7 +1,7 @@
 <?php
 require_once "scripts/config.php";
 $username = $password = $confirm_password = "";
-$username_err = $password_err = $confirm_password_err = "";
+$username_err = $password_err = $name_err = $sname_err = $confirm_password_err = "";
 if($_SERVER["REQUEST_METHOD"] == "POST"){
 	if(empty(trim($_POST["username"]))){
 		$username_err = "Please enter a username.";
@@ -31,6 +31,18 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 	} else{
 		$password = trim($_POST["password"]);
 	}
+	if(empty(trim($_POST["name"]))){
+		$name_err = "Please enter a name.";     
+	} else {
+		$name =trim($_POST["name"]);
+	}
+	if(empty(trim($_POST["surname"]))){
+		$surname_err = "Please enter a Surname.";     
+	} else {
+		$sname=trim($_POST["surname"]);
+	}
+		$tel =trim($_POST["telephone"]);
+
 	if(empty(trim($_POST["confirm_password"]))){
 		$confirm_password_err = "Please confirm password.";     
 	} else{
@@ -39,15 +51,20 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 			$confirm_password_err = "Password did not match.";
 		}
 	}
-	if(empty($username_err) && empty($password_err) && empty($confirm_password_err)){
-		$sql = "INSERT INTO `users` (`name`, `surname`, `email`, `phone_no`, `password`) VALUES ('', '', ?, '', ?)";
+	if(empty($username_err) && empty($password_err) && empty($name_err) && empty($sname_err) && empty($confirm_password_err)){
+		$sql = "INSERT INTO `users` (`name`, `surname`, `email`, `phone_no`, `password`) VALUES (?, ?, ?, ?, ?)";
 		$stmt = mysqli_stmt_init($link);
 		if($stmt = mysqli_prepare($link, $sql)){
-			mysqli_stmt_bind_param($stmt, "ss", $email, $pass);
+			mysqli_stmt_bind_param($stmt, "sssss", $name, $sname, $email, $tel, $pass);
 			$email = $username;
 			$pass = password_hash($password, PASSWORD_DEFAULT);
 			if(mysqli_stmt_execute($stmt)){
+				session_start();
+				if ($_SESSION["is_admin"]) {
+					header ("location: admin.php");
+				} else {
 				header("location: login.php");
+				}
 			} else{
 				echo "Something went wrong. Please try again later.";
 			}

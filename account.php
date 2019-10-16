@@ -21,28 +21,19 @@
 		<?php
 			session_start();
 			require_once "scripts/config.php";
-			$sql = "SELECT * FROM `users` WHERE `user_id` = ?";
-			if ($stmt = mysqli_prepare($link, $sql))
-			{
-				mysqli_stmt_bind_param($stmt, "s", $u_id);
-				$u_id = $_SESSION['ID'];
-				if(mysqli_stmt_execute($stmt)){
-					mysqli_stmt_store_result($stmt);
-					if (mysqli_stmt_num_rows($stmt) == 1){
-						mysqli_stmt_bind_result($stmt, $id, $name, $sname, $email, $p_no, $h_pass);
-						if(mysqli_stmt_fetch($stmt)){
-							echo '<form class="acc"><label>Name: </label><input type="text" value="'.$name.'" name="name"><br />
-							<label>Name: </label><input type="text" value="'.$sname.'" name="name"> <br />
-							<label>Name: </label><input type="text" value="'.$email.'" name="name"> <br />
-							<label>Name: </label><input type="text" value="'.$p_no.'" name="name"> <br />
-							<label>Name: </label><input type="text" name="name"> <br />
-							<label>Name: </label><input type="text" name="name"></form>';
-						}
-					}
-				}
-			}
-
-
+			$sql = "SELECT * FROM `users` WHERE `user_id`=".$_SESSION["ID"].";";
+			$result=mysqli_query($link,$sql);
+			$row=mysqli_fetch_row($result);
+			echo '<h1>Account Management</h1>
+			<form class="acc" action="user_scripts/acc_m.php" method="POST"><label>Name: </label><input type="text" value="'.$row[1].'" name="name"><br />
+			<label>Surame: </label><input type="text" value="'.$row[2].'" name="sname"> <br />
+			<label>Email: </label><input type="text" value="'.$row[3].'" name="email"> <br />
+			<label>Telephone: </label><input type="text" value="'.$row[4].'" name="tel"> <br />
+			<label>Old Password: </label><input type="text" name="o_pass"> <br />
+			<label>Old Password: </label><input type="text" name="pass"> 
+			<input type="hidden" value="'.$row[0].'" name="p_id">
+			<input type="submit" value="update Account">
+			</form>';
 		?>
 	</div>
 </body>

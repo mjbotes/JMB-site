@@ -1,5 +1,5 @@
 <?php
-	require_once "user_scripts/logout.php";
+	require_once "user_scripts/register.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -27,19 +27,15 @@
                 <span class="help-block"><?php echo $name_err; ?></span>
             </div> 
             <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-            <div class="form-group <?php echo (!empty($name_err)) ? 'has-error' : ''; ?>">
+            <div class="form-group <?php echo (!empty($surname_err)) ? 'has-error' : ''; ?>">
                 <label>Surname</label>
                 <input type="surname" name="surname" class="form-control" value="<?php echo $surname; ?>">
-<<<<<<< HEAD
-                <span class="help-block"><?php echo $sname_err; ?></span>
-=======
                 <span class="help-block"><?php echo $surname_err; ?></span>
             </div>
             <div class="form-group <?php echo (!empty($name_err)) ? 'has-error' : ''; ?>">
                 <label>Telephone no</label>
                 <input type="telephone" name="telephone" class="form-control" value="<?php echo $telephone; ?>">
                 <span class="help-block"><?php echo $telephone_err; ?></span>
->>>>>>> 4a81cc3d5ec53d4acd5577bccd82cc4e5c1f487e
             </div> 
             <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
                 <label>Email </label>

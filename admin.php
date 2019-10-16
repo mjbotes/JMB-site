@@ -31,17 +31,25 @@
 	<br/>
 	<h1 style="margin-top:1vh; font-size:4vh; color:black;">JMB Admin</h1>
 	<br />
-	<h1 style="margin-top:1vh; font-size:3vh; color:black;">Add Product</h1>
+	<h1 style="margin-top:1vh; font-size:3vh; color:black;">Product Management</h1>
 	<div class="add_p" style="font-size: 2vh">
 		<?php require_once "scripts/admin_add_p.php"; ?>
 	</div>
 	<div>
 		<?php require_once "scripts/admin_mod_p.php"; ?>
 	</div>
+	<h1 style="margin-top:1vh; font-size:3vh; color:black;">User Management</h1>
 	<div>
+		<a href="register.php">Add new User</a><br />
 		<?php require_once "scripts/admin_mod_u.php"; ?>
 	</div>
+	<h1 style="margin-top:1vh; font-size:3vh; color:black;">Cart Management</h1>
 	<div>
+		<?php require_once "scripts/admin_carts.php"; ?>
+	</div>
+	<h1 style="margin-top:1vh; font-size:3vh; color:black;">Catergory Management</h1>
+	<div>
+		<?php require_once "scripts/add_cat.php"; ?>
 		<?php require_once "scripts/admin_carts.php"; ?>
 	</div>
 </div>

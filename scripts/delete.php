@@ -17,7 +17,11 @@
 		}
 	} elseif (isset($_GET["cart"]))
 	{
-		$sql = "DELETE FROM `cat` WHERE `user_id`=".$_GET["cart"];
+		$sql = "DELETE FROM `cart` WHERE `user_id`=".$_GET["cart"];
+		mysqli_query($link, $sql);
+	} elseif (isset($_GET["cat"]))
+	{
+		$sql = "DELETE FROM `catergory` WHERE `c_id`=".$_GET["c_id"];
 		mysqli_query($link, $sql);
 	}
 	header ("location: ../admin.php");
