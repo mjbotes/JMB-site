@@ -8,13 +8,13 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 	} else{
 		$sql = "SELECT 'user_id' FROM users WHERE email = ?";
 		if($stmt = mysqli_prepare($link, $sql)){
-			mysqli_stmt_bind_param($stmt, "s", $param_username);
-			$param_username = trim($_POST["username"]);
+			mysqli_stmt_bind_param($stmt, "s", $email);
+			$email = trim($_POST["username"]);
 			if(mysqli_stmt_execute($stmt)){
 				mysqli_stmt_store_result($stmt);
 				
 				if(mysqli_stmt_num_rows($stmt) == 1){
-					$username_err = "This username is already taken.";
+					$username_err = "This email is already taken.";
 				} else{
 					$username = trim($_POST["username"]);
 				}
@@ -43,9 +43,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 		$sql = "INSERT INTO `users` (`name`, `surname`, `email`, `phone_no`, `password`) VALUES ('', '', ?, '', ?)";
 		$stmt = mysqli_stmt_init($link);
 		if($stmt = mysqli_prepare($link, $sql)){
-			mysqli_stmt_bind_param($stmt, "ss", $param_username, $param_password);
-			$param_username = $username;
-			$param_password = password_hash($password, PASSWORD_DEFAULT);
+			mysqli_stmt_bind_param($stmt, "ss", $email, $pass);
+			$email = $username;
+			$pass = password_hash($password, PASSWORD_DEFAULT);
 			if(mysqli_stmt_execute($stmt)){
 				header("location: login.php");
 			} else{
