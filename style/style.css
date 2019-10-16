@@ -1,0 +1,417 @@
+@font-face {
+	font-family: "xmas";
+	src: url(../fonts/RobotoCondensed-Bold.ttf);
+}
+@font-face {
+	font-family: "head2";
+	src: url(../fonts/RobotoCondensed-Regular.ttf);
+}
+@font-face {
+	font-family: "body";
+	src: url(../fonts/RobotoCondensed-Light.ttf);
+}
+body {
+	background-color: white;
+	background-size: 100%;
+	margin: 0;
+	padding: 0;
+	color: white;
+	text-align: center;
+}
+
+.acc {
+	color: black;
+}
+
+p {
+	background-color: white;
+	background-size: 100%;
+	font-family: body;
+	margin: 0;
+	padding: 0;
+	color: rgb(0, 0, 0);
+	text-align: center;
+}
+
+header {
+	margin: 0;
+	padding: 0;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	background-image: url("../imgs/header.jpg");
+	background-size:100%;
+}
+
+.footer {
+	position: fixed;
+	background:black; 
+    bottom: 0;
+    left: 0;
+    right: 0;
+	height: 50px;
+	font-family: body;
+	color: #DDD;
+}
+
+.footer  .fcontent  .a{
+	color: white;
+}
+.link {
+	padding-top: 1%;
+	color: #DDD;
+	padding-left: 2%;
+	font-size: 90%;
+	text-decoration: none;
+}
+
+.link a {
+	color: white;
+}
+
+.footer .fcontent{
+	padding-top: .5%;;
+	text-decoration: none;
+	color:white;
+	padding-top: 1%;
+}
+
+h1 {
+	color: black;
+	text-emphasis-color: white;
+	text-emphasis-style: solid;
+	text-decoration: solid;
+	font-size: 5vh;
+	text-align: center;
+	margin: 0;
+	font-family: xmas;
+}
+h2 {
+	padding-top: 3%;
+	color: black;
+	text-emphasis-color: white;
+	text-emphasis-style: solid;
+	text-decoration: solid;
+	font-size: 1.5vw;
+	text-align: center;
+	margin: 0;
+	font-family: head2;
+}
+
+h3 {
+	padding-top: 3%;
+	color: black;
+	text-decoration: solid;
+	font-size: 5vh;
+	text-align: center;
+	margin: 0;
+	font-family: head2;
+}
+
+.nav {
+	background-color: white;
+	display: block;
+}
+
+.nav a {
+	width: 15%;
+	padding-top: 1vh;
+	padding-bottom: 1vh;
+	outline-width: 1;
+	outline-style: solid;
+	text-align: center;
+	display: inline-block;
+	transition: 0.8s;
+	text-decoration: none;
+	font-size: 2vh;
+	font-family: xmas;
+	color: black;
+}
+
+.userd{
+	color: white;
+    font-family: xmas;
+    font-size: 2vh;
+    right: 0;
+    top: 5%;
+    padding-right: 2%;
+    width: 10%;
+	padding-left: 1%;
+    position: fixed;
+	height: 3vh;
+	padding-top: .5%;
+    background: black;
+	border-radius: 8px 7px 7px;
+	text-align: center;
+	font-size: 1.8vh;
+}
+
+.userd a {
+	color: white;
+	text-decoration: none;
+}
+
+.nav .empty {
+	outline-style: none;
+}
+
+.nav a:hover {
+	background-color: maroon;
+	color: white;
+	font-size: 2.5vh;
+}
+
+.filter {
+	width: 15%;
+	float: left;
+	background-color: black;
+	color: white;
+	border-radius: 5px;
+	margin: 10px;
+}
+
+.filter p {
+	padding: 1vh 0 1vh 0;
+	margin: 2%;
+	text-align: center;
+	color: white;
+	font-family: xmas;
+	font-size: 150%;
+	outline-width: 1px;
+}
+
+.main {
+	border-radius: 15px;
+	display: block;
+	background-color: white;
+	width: 60%;
+	margin: 0 auto;
+	padding-top: 2%;
+}
+
+
+.products {
+	width: 80%;
+	margin: 10px;
+	float: center;
+	text-align: center;
+	font-family: head2;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+.item {
+	background-color:white;
+	text-align: center;
+	border-radius: 5px;
+	color: black;
+	width: 30%;
+	display: inline-block;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.item img{
+	width: 50%;
+	border: 4px solid black;
+}
+
+.login {
+	background-color: white;
+	margin: 10px auto;
+	width: 50%;
+	font-family: xmas;
+	color: black;
+	border-style: solid;
+	border-color: black;
+	border-width: 4px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 5%;
+}
+
+.cart{
+	color: black;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+table{
+	border: 4px solid black;
+	border-collapse: collapse;
+	width: 50%;
+	font-family: head2;
+}
+th{
+	font-family: xmas;
+}
+tr{
+	font-family: body;
+}
+
+td{
+	border: 2px solid black;
+	padding: 1%;
+	font-family: body;
+}
+
+.register {
+	background-color: white;
+	margin: 10px auto;
+	width: 60%;
+	font-family: xmas;
+	color: maroon;
+	border-radius: 15px;
+	border-color: maroon;
+	border-style: solid;
+	border-width: 4px;	
+}
+
+.login input .text, .register input .text {
+	margin: 5px;
+	float:right;
+	border: 2px maroon solid;
+}
+
+.login p {
+	text-align: center;
+	font-size: 2vw;
+}
+
+.login p a {
+	color: maroon;
+	text-decoration: none;
+}
+
+.login p a:hover {
+	color: green;
+}
+
+.login label, .register .l_d label {
+	padding: 10px;
+	font-size: 2vw;
+}
+
+.login  .button, .register .button{
+	background-color: maroon;
+	color: white;
+	display: block;
+	padding: 2%;
+	width: 30%;
+	font-family: xmas;
+	font-size: 2vw;
+}
+
+.login  .button:hover, .register .button:hover{
+	background-color: green;
+}
+
+.login h2, .register h2 {
+	text-align: center;
+	font-size: 3vw;
+}
+
+.l_d {
+	display: block;
+	margin: 0 auto;
+	width: max-content;
+}
+.about{
+	width:80%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+.aboutinfobox{
+	width: 50%;
+	z-index: 15;
+	left: 50%;
+	right: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.marnus{
+	width: 50%;
+	display: inline-block;
+	text-align: center;
+	display: block;
+	float: left;
+	margin-bottom: 4%;
+}
+.about img{
+	width:50%;
+    border-radius: 200px;
+    box-sizing: border-box;
+    background-color: #DDD;
+	border: 5px solid #cfd8dc;
+	text-align: center;
+	margin-top: 1vh;
+	margin-bottom: 2vh;
+}
+.about p{
+	margin: 1vh;
+}
+.about .moreabout{
+	width: 50%;
+	z-index: 15;
+	left: 50%;
+	right: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	/* margin-top: 3vh; */
+}
+
+.form{
+	font-family: body;
+	color: black;
+	width: 60%;
+}
+
+.form-group{
+	padding-top: 4%;;
+	width:50%;
+	padding-bottom: 0;
+	font-family: body;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.button{
+	width: 30%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.admin_table{
+	width: 50%;
+	border: 2px solid black;
+	border-collapse: collapse;
+	margin-left: auto;
+	margin-right: auto;
+	margin: 10px auto;
+	display: block;
+	color: black;
+}
+.admin_table img{
+	max-height: 20%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.admin_table td{
+	width: 20%;
+}
+
+.a_icon {
+	width: 15%;
+}
+
+.add_p {
+	box-shadow: grey 5px 5px 5px 5px;
+	color: black;
+	width:50%;
+	align-self: center;
+	display: block;
+	margin: 100px auto;
+}
