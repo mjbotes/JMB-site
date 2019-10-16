@@ -117,7 +117,7 @@ header {
 }
 
 .footer .fcontent{
-	padding-top: .5%;;
+	padding-top: .5%;
 	text-decoration: none;
 	color:white;
 	padding-top: 1%;
@@ -178,7 +178,8 @@ h3 {
 .userd{
 	color: white;
     font-family: xmas;
-    font-size: 2vh;
+	font-size: 2vh;
+	float: right;
     right: 0;
     top: 5%;
     padding-right: 2%;
@@ -282,7 +283,7 @@ h3 {
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
-
+	margin-top: 2vh;
 }
 
 table{
@@ -438,7 +439,7 @@ form.add_product{
 }
 
 .form-group{
-	padding-top: 4%;;
+	padding-top: 4%;
 	width:50%;
 	padding-bottom: 0;
 	font-family: body;
@@ -453,12 +454,13 @@ form.add_product{
 }
 
 .admin_table{
-	width: 100%;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
 	border-collapse: collapse;
 	display: block;
 	color: black;
-	margin-top: 2vh;;
-
+	margin-top: 2vh;
 }
 .admin_table img{
 	max-height: 20%;
@@ -468,6 +470,8 @@ form.add_product{
 
 .admin_table td{
 	width: 15%;
+	border-collapse: collapse;
+	
 }
 
 .a_icon {
