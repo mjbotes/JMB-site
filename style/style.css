@@ -280,6 +280,13 @@ h3 {
 	padding: 5%;
 }
 
+.categories{
+	float: left;
+	padding-left: 2%;
+	padding-right: 2%;
+	text-align: left;
+}
+
 .cart{
 	color: black;
 	text-align: center;
@@ -313,11 +320,10 @@ td{
 	margin: 10px auto;
 	width: 60%;
 	font-family: xmas;
-	color: maroon;
-	border-radius: 15px;
-	border-color: maroon;
+	color: black;
+	border-color: black;
 	border-style: solid;
-	border-width: 4px;	
+	border-width: 2px;	
 }
 
 .login input .text, .register input .text {
