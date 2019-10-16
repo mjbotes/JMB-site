@@ -26,10 +26,16 @@
                 <input type="name" name="name" class="form-control" value="<?php echo $name; ?>">
                 <span class="help-block"><?php echo $name_err; ?></span>
             </div> 
+            <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
             <div class="form-group <?php echo (!empty($name_err)) ? 'has-error' : ''; ?>">
                 <label>Surname</label>
                 <input type="surname" name="surname" class="form-control" value="<?php echo $surname; ?>">
-                <span class="help-block"><?php echo $name_err; ?></span>
+                <span class="help-block"><?php echo $surname_err; ?></span>
+            </div>
+            <div class="form-group <?php echo (!empty($name_err)) ? 'has-error' : ''; ?>">
+                <label>Telephone no</label>
+                <input type="telephone" name="telephone" class="form-control" value="<?php echo $telephone; ?>">
+                <span class="help-block"><?php echo $telephone_err; ?></span>
             </div> 
             <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
                 <label>Email </label>
