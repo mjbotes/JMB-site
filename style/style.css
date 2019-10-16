@@ -17,6 +17,7 @@ body {
 	padding: 0;
 	color: white;
 	text-align: center;
+	height:100%;
 }
 
 .land {
@@ -178,12 +179,12 @@ h3 {
 .userd{
 	color: white;
     font-family: xmas;
-	font-size: 2vh;
+	font-size: 1vh;
 	float: right;
     right: 0;
     top: 5%;
-    padding-right: 2%;
-    width: 10%;
+    padding-right: 1%;
+    width: 15%;
 	padding-left: 1%;
     position: fixed;
 	height: 3vh;
@@ -197,6 +198,7 @@ h3 {
 .userd a {
 	color: white;
 	text-decoration: none;
+	font-size: 100%;
 }
 
 .nav .empty {
@@ -471,7 +473,7 @@ form.add_product{
 .admin_table td{
 	width: 15%;
 	border-collapse: collapse;
-	
+
 }
 
 .a_icon {
@@ -490,4 +492,10 @@ form.add_product{
 
 table.admin_table {
     font-size: 2vh;
+}
+
+.bck2bck{
+	height: 1000px;
+	width: 100%;
+	background-image: url("../imgs/land.jpg");
 }

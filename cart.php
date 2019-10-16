@@ -10,6 +10,7 @@
 	href = "style/style.css" />
 </head>
 <body>
+<div class="bck2bck">
 	<header>
 	<img src="./imgs/header/clogo.png" style="width:12%;">
 		<?php
@@ -22,7 +23,7 @@
 	<br/>
 	<h1 style="margin-top:1vh; font-size:4vh; color:black;">Shopping Cart</h1>
 	<br/>
-	<p>Proceed to checkout</p>
+	<h1 style="margin-top: 0.5vh; font-size:2vh; color:black;">Proceed to checkout</h1>
 	<br />
 	<table class="cart">
 	<?php
@@ -31,5 +32,6 @@
 	<?php
 	require_once "scripts/footer.php";
 ?>
+</div>
 </body>
 </html>

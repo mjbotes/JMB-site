@@ -19,6 +19,7 @@
 	href = "./style/style.css" />
 </head>
 <body style="height:100%; margin: 0;">
+<div class="bck2back">
 	<header>
 	<img src="./imgs/header/logo.png" style="width:12%;">
 	<?php require_once "user_scripts/user_bar.php"; ?>
@@ -40,5 +41,6 @@
 	<div>
 		<?php require_once "scripts/admin_mod_u.php"; ?>
 	</div>
+</div>
 </body>
 </html>
